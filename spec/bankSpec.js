@@ -19,10 +19,10 @@ describe('Bank', function() {
   })
 
   it('displays a record of transactions', function() {
-    let exampleStatement = "date \|\| credit \|\| debit \|\| balance\n21\/10\/2019 \|\| \|\| 75.00 \|\| 25.00\n20\/10\/2019 \|\| 100.00 \|\|  \|\| 100.00"
+    let exampleStatement = "date \|\| credit \|\| debit \|\| balance\n21\/10\/2019 \|\|  \|\| 75.00 \|\| 25.00\n20\/10\/2019 \|\| 100.00 \|\|  \|\| 100.00"
 
     bank.deposit(100, '20/10/2019');
     bank.withdraw(75, '21/10/2019');
-    expect(bank.statement).toEqual(exampleStatement)
+    expect(bank.statement()).toEqual(exampleStatement)
   })
 })
