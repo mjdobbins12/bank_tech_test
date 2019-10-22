@@ -18,3 +18,15 @@ date || credit || debit || balance
 ```
 
 Data can be stored in memory. 
+
+## How it works
+
+Clone this repo, then inspect index.html in a browser.
+
+New account ```bank = new Bank();```
+
+Make a deposit ```bank.deposit(100);```
+
+Withdraw funds ```bank.withdraw(50);```
+
+Check your statement ```bank.statement();```
